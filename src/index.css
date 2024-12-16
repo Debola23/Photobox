@@ -67,3 +67,11 @@ footer{
         margin-top: 12rem;
     }
 }
+@media screen and (max-width: 535px){
+    .search {
+        margin-right: 26px;
+    }
+    .sp{
+        margin-left: 0;
+    }
+}

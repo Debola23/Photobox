@@ -3,6 +3,47 @@
     width: 3rem;
     margin: 0;
 }
+.searchContainer {
+    display: flex;
+    align-items: center;
+    width: 34rem;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 5px 10px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+.searchInput {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    background: transparent;
+    color: #333;
+    font-family: "apple-system,BlinkMacSystemFont,San Francisco,Helvetica Neue,Helvetica,Ubuntu,Roboto,Noto,Segoe UI,Arial,sans-serif";
+    font-size: 18px;
+    font-weight: 200;
+}
+.searchInput::placeholder {
+    color: #aaa;
+}
+.searchButton {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    transition: color 0.3s ease;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+}
 .griddy{
     -webkit-column-count: 4;
     -moz-column-count: 4;
@@ -70,6 +111,31 @@ footer{
         padding-right: 1.5rem;
     }
 }
+@media (max-width: 768px) {
+    .searchContainer {
+      max-width: 400px;
+      padding: 5px 8px;
+    }
+  
+    .searchInput {
+      font-size: 14px;
+      padding: 6px 8px;
+    }
+  
+    .icon {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .searchContainer {
+      width: 18rem;
+      padding: 10px;
+    
+    }
+  }
+  
 
 
 
